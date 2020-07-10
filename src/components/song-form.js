@@ -7,8 +7,9 @@ const SongForm = ({addSong}) => {
     const titleSubmitHandler = (event) => {
         event.preventDefault();
         addSong(title);
-        setTitle(''); //to clear the input field
+        setTitle(''); //only to clear the input field
     }
+    
     return (
         <form onSubmit={titleSubmitHandler}>
             <label>Add Song form</label>
